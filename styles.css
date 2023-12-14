@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./images/mountain.png"),linear-gradient(#2154b4e3, coral);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 3% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 60px;
+    border-radius: 50%;
+}
+.nav-options{
+    flex:1;
+    text-align: right;
+}
+.nav-options ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+.nav-options ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*Hover*/
+.nav-options ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+.nav-options ul li:hover::after{
+    width: 100%;
+}
+.textheader{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align:center;
+
+}
+.textheader h1{
+    font-size: 6rem;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+.textheader p{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: 10px 10px;
+}
+.logoheading{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0 5px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+    color: rgb(250, 88, 29);
+
+
+}
+nav .fa{
+    display: none;
+}
+.headerbutton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 8px;
+
+}
+.headerbutton:hover{
+
+    color: coral;
+    transition: 0.5s;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #2155b4;
+    padding: 4px 8px 4px 8px;
+    cursor: pointer;
+    position: relative;
+    background-color: #2155b4;
+    border-radius: 5%;
+
+}
+.button:hover{
+    border: 1px solid coral;
+    background-color: coral;
+    transition: 0.5s;
+}
+
+/* Skills */
+
+.skills {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    background: white;
+
+}
+.row > *{
+    margin-bottom: 12px;
+}
+.skillcol > *{
+    margin: 10px;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 16px;
+}
+.row{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin: 1% 3% 1% 3%;
+}
+.skillcol{
+    flex-basis: 47%;
+    background-color: white;
+    border-radius: 3%;
+    padding: 10px 10px;
+    margin: 10px 5px 10px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.img-skill-data{
+    height: 40px;
+    margin: 5px;
+}
+#smallerlogos img{
+    height: 25px;
+}
+.skillcol:hover{
+    /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);*/
+    box-shadow: 0 0 20px 0 #11387a;
+}
+/* Projects */
+.projects{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    background: white;
+}
+.projects > *{
+    margin-bottom: 12px;
+}
+.projectscol > *{
+    margin: 10px 0 10px 0;
+}
+
+
+.projectsrow{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin: 1% 3% 1% 3%;
+}
+
+.projectscol{
+    flex-basis: 47%;
+    background-color: white;
+    border-radius: 3%;
+    padding: 10px 10px;
+    margin: 10px 5px 10px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.projectscol:hover{
+    box-shadow: 0 0 20px 0 #11387a;
+}
+.projectscol img{
+    width: 100%;
+    border-radius: 3%;
+    display: block;
+
+}
+
+/* Contact me*/
+.contactme{
+    margin: 100px 5%;
+    width: 90%;
+    height: 300px;
+    background-image: url("./images/skyline.jpg"),linear-gradient(#2154b4e3, coral);    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contactme > *{
+    margin: 10px 3% 10px 3%;
+    color: white;
+    text-align: center;
+}
+.contactme .email{
+    color: coral;
+    font-weight: bold;
+}
+
+/* Footer section */
+#footersection{
+    background: #2155b4;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+#footersection *{
+    margin-bottom: 10px;
+}
+
+.footerbutton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 8px;
+}
+.footerbutton:hover{
+
+    color: coral;
+    transition: 0.5s;
+}
+
+/*Media queries*/
+@media (max-width: 700px)
+{
+    .textheader h1{
+        font-size: 3.5rem;
+    }
+    .textheader p{
+        font-size: 1rem;
+    }
+    .logoheading{
+        font-size: 1.5rem;
+    }
+    .nav-options ul li{
+        display: block;
+    }
+    .nav-options{
+        position: absolute;
+        top: 0;
+        right: -200px;
+        background: #2154b49f;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-options ul{
+        padding: 20px;
+    }
+    .headerbutton{
+        font-size: 32px;   
+    }
+    .row{
+        flex-direction: column;
+        margin: 3%;
+    }
+    .projectsrow{
+        flex-direction: column;
+        margin: 3%;
+    }
+    .footersection{
+        font-size: 20px;
+    }
+}
