@@ -283,7 +283,7 @@ p{
         /*right: -200px;*/
         right:0px;
         visibility: hidden;
-        /*^transition off*/
+        /*transition*/
 
         background: #2154b49f;
         height: 100vh;
